@@ -21,22 +21,41 @@
         <div class="jumbotron">
             <h5 class="mute">Inloggad som <small>Jonas</small></h5>
             <h2>Är det inte något du glömt?</h2>
-            
-            <h4></h4>
+            <hr/>
 
+            <h4 id="hint-buttons">
+                <button onclick="$('#hint-buttons').fadeOut();$('#clue').fadeIn()" class="btn btn-md">Ge mig en ledtråd</button>
+            </h4>
         </div>
-        <hr/>
-        <h3>You have <span id="journey_count"></span> active journeys:</h3>
-        <div id="journeys">
-            Loading...
+
+        <div id="clue" style="display:none;">
+            <hr/>
+            <h3>Ledtråd: Något du ska göra varje eftermiddag</h3>
+
+            <h4 id="clue-buttons">
+                    <button onclick="$('#clue-buttons').fadeOut();$('#facit').fadeIn();" class="btn btn-md">Jag tror jag vet, visa mig</button>
+                    |
+                    <button onclick="$('#clue-buttons').fadeOut();$('#facit').fadeIn();" class="btn btn-md">Ingen aning, visa mig</button>
+            </h4>
+        </div>
+
+        <div id="facit" style="display:none;">
+            <hr/>
+            <h3>Svar: Stretchövningar <small>Mot ömma axlar</small></h3>
+
+            <h4>
+                <button onclick="$('#clue').fadeIn()" class="btn btn-md">OK, jag har gjort det</button>
+            </h4>
         </div>
     </div>
 
+
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
     
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    
 </body>
 
 </html>
