@@ -9,13 +9,13 @@ div.jumbotron
     padding: 1rem;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     text-align: center;
     text-shadow: 0em 0em 0.2em #000;
     margin-bottom: .5rem;
     font-weight: 100;
     color: #fff;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 
