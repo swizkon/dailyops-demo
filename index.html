@@ -5,17 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DailyOps</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-
-    <nav>
-            <a href="index.html">Home screen</a>
-            |
-            <a href="routines.html">Routines</a>
-    </nav>
 
     <div class="container" id="index">
         <div class="jumbotron">
@@ -25,24 +18,18 @@
 
             <div id="hint-buttons" class="btn-group" role="group" aria-label="Basic example">
                 <button type="button" onclick="$('#hint-buttons').fadeOut();$('#clue').fadeIn()" class="btn btn-secondary">Ge mig en ledtråd</button>
-           
-                <button type="button" class="btn btn-secondary">Left</button>
-                <button type="button" class="btn btn-secondary">Middle</button>
-                <button type="button" class="btn btn-secondary">Right</button>
             </div>
         </div>
 
-        <div class="jumbotron" id="clue" style="display:block;">
+        <div class="jumbotron" id="clue" style="display:none;">
             <hr/>
             <h3>Ledtråd: Något du ska göra varje eftermiddag</h3>
 
             <div id="clue-buttons" class="btn-group" role="group" aria-label="Basic example">
-                    <button onclick="$('#clue-buttons').fadeOut();$('#facit').fadeIn();" class="btn btn-secondary">Jag tror jag vet, visa mig</button>
-                    <button onclick="$('#clue-buttons').fadeOut();$('#facit').fadeIn();" class="btn btn-secondary">Ingen aning, visa mig</button>
-                </div>
-
-            <h4 id="clue-buttons">
-            </h4>
+                <button onclick="$('#clue-buttons').fadeOut();$('#facit').fadeIn();" class="btn btn-secondary">Jag tror jag vet</button>
+                <br/>
+                <button onclick="$('#clue-buttons').fadeOut();$('#facit').fadeIn();" class="btn btn-secondary">Ingen aning</button>
+            </div>
         </div>
 
         <div id="facit" style="display:none;">
@@ -50,7 +37,7 @@
             <h3>Svar: Stretchövningar <small>Mot ömma axlar</small></h3>
 
             <h4>
-                <button onclick="$('#clue').fadeIn()" class="btn btn-md">OK, jag har gjort det</button>
+                <button onclick="$('#clue').fadeIn()" class="btn btn-secondary">OK, jag har gjort det</button>
             </h4>
         </div>
     </div>
