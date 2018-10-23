@@ -23,19 +23,25 @@
             <h2>Är det inte något du glömt?</h2>
             <hr/>
 
-            <h4 id="hint-buttons">
-                <button onclick="$('#hint-buttons').fadeOut();$('#clue').fadeIn()" class="btn btn-md">Ge mig en ledtråd</button>
-            </h4>
+            <div id="hint-buttons" class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" onclick="$('#hint-buttons').fadeOut();$('#clue').fadeIn()" class="btn btn-secondary">Ge mig en ledtråd</button>
+           
+                <button type="button" class="btn btn-secondary">Left</button>
+                <button type="button" class="btn btn-secondary">Middle</button>
+                <button type="button" class="btn btn-secondary">Right</button>
+            </div>
         </div>
 
-        <div id="clue" style="display:none;">
+        <div class="jumbotron" id="clue" style="display:block;">
             <hr/>
             <h3>Ledtråd: Något du ska göra varje eftermiddag</h3>
 
+            <div id="clue-buttons" class="btn-group" role="group" aria-label="Basic example">
+                    <button onclick="$('#clue-buttons').fadeOut();$('#facit').fadeIn();" class="btn btn-secondary">Jag tror jag vet, visa mig</button>
+                    <button onclick="$('#clue-buttons').fadeOut();$('#facit').fadeIn();" class="btn btn-secondary">Ingen aning, visa mig</button>
+                </div>
+
             <h4 id="clue-buttons">
-                    <button onclick="$('#clue-buttons').fadeOut();$('#facit').fadeIn();" class="btn btn-md">Jag tror jag vet, visa mig</button>
-                    |
-                    <button onclick="$('#clue-buttons').fadeOut();$('#facit').fadeIn();" class="btn btn-md">Ingen aning, visa mig</button>
             </h4>
         </div>
 
@@ -49,11 +55,14 @@
         </div>
     </div>
 
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js" crossorigin="anonymous" integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+    </script>
+<script>(window.jQuery||document.write("\u003Cscript src=\u0022\/lib\/jquery\/dist\/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-K\u002BctZQ\u002BLL8q6tP7I94W\u002BqzQsfRV2a\u002BAfHIi9k8z8l9ggpc8X\u002BYtst4yBo\/hH\u002B8Fk\u0022\u003E\u003C\/script\u003E"));</script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+    </script>
+<script>(window.jQuery && window.jQuery.fn && window.jQuery.fn.modal||document.write("\u003Cscript src=\u0022\/lib\/bootstrap\/dist\/js\/bootstrap.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa\u0022\u003E\u003C\/script\u003E"));</script>
 
-    <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+<script src="assets/js/app.js"></script>
     
     
 </body>
