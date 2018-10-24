@@ -28,3 +28,22 @@ body, div.jumbotron
 }
 }
 */
+
+
+.navbar-collapse.collapse {
+    display: block !important;
+    }
+    
+    .navbar-nav > li, .navbar-nav {
+    float: left !important;
+    flex-direction: row;
+    }
+    
+    
+    .navbar-nav.navbar-right:last-child {
+    margin-right: -15px !important;
+    }
+    
+    .navbar-right {
+    float: right !important;
+    }
